@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1460px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main__right {
+  font-family: "Ubuntu";
+  font-size: 22px;
+  flex: 50%;
+}
+.main__right h1 {
+  color: #0b64fe;
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.main__right p {
+  margin-bottom: 20px;
+  line-height: 170%;
+  color: #181818;
+}
+
+.main__left {
+  flex: 50%;
+}
+
+.text__container {
+  width: 514px;
+}
