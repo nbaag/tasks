@@ -46,3 +46,21 @@
   top: -60px;
   left: -250px;
 }
+.btn {
+  font-family: "Ubuntu";
+  position: absolute;
+  top: 400px;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: #a6ffff;
+}
+
+.btn:first-of-type {
+  padding: 50px 20px;
+  left: 200px;
+}
+
+.btn:last-of-type {
+  padding: 50px 32px;
+  left: 400px;
+}
