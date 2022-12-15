@@ -12,9 +12,11 @@
 
 .main__right {
   font-family: "Ubuntu";
+  padding-left: 100px;
   font-size: 22px;
   flex: 50%;
 }
+
 .main__right h1 {
   color: #0b64fe;
   font-weight: 300;
@@ -35,4 +37,12 @@
 
 .text__container {
   width: 514px;
+}
+
+.bimg,
+.timg {
+  width: 1300px;
+  position: absolute;
+  top: -60px;
+  left: -250px;
 }
