@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 1460px;
+  max-width: 1460px;
   margin: 0 auto;
   display: flex;
 }
@@ -36,7 +36,7 @@
 }
 
 .text__container {
-  width: 514px;
+  max-width: 514px;
 }
 
 .bimg,
@@ -63,4 +63,47 @@
 .btn:last-of-type {
   padding: 50px 32px;
   left: 400px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: block;
+  }
+  .main__right {
+    padding: 12px;
+  }
+  .main__right h1 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .main__right p {
+    font-size: 16px;
+  }
+
+  .main__right p:first-of-type {
+    padding-bottom: 520px;
+  }
+
+  .bimg,
+  .timg {
+    width: 800px;
+    position: absolute;
+    top: 590px;
+    left: -140px;
+  }
+
+  .btn {
+    top: 800px;
+  }
+
+  .btn:first-of-type {
+    padding: 50px 20px;
+    left: 200px;
+  }
+
+  .btn:last-of-type {
+    padding: 50px 32px;
+    left: 400px;
+  }
 }
