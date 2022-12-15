@@ -49,6 +49,7 @@
 .btn {
   font-family: "Ubuntu";
   position: absolute;
+  border: none;
   top: 400px;
   font-size: 40px;
   border-radius: 50%;
@@ -82,28 +83,29 @@
   }
 
   .main__right p:first-of-type {
-    padding-bottom: 520px;
+    padding-bottom: 320px;
   }
 
   .bimg,
   .timg {
-    width: 800px;
+    width: 500px;
     position: absolute;
-    top: 590px;
-    left: -140px;
+    top: 420px;
+    left: -90px;
   }
 
   .btn {
-    top: 800px;
+    top: 600px;
+    font-size: 12px;
   }
 
   .btn:first-of-type {
-    padding: 50px 20px;
-    left: 200px;
+    padding: 22px 12px;
+    left: 100px;
   }
 
   .btn:last-of-type {
-    padding: 50px 32px;
-    left: 400px;
+    padding: 22px 16px;
+    left: 170px;
   }
 }
