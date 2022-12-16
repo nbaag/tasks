@@ -7,9 +7,8 @@ let upInterval;
 let downInterval;
 
 button_up.onclick = function () {
-  clearInterval(downInterval);
-
   let top = -tableStyle.top.replace(/\D/g, "");
+
   if (top === -60) {
     clearInterval(downInterval);
     upInterval = setInterval(() => {
@@ -21,6 +20,21 @@ button_up.onclick = function () {
       }
     }, 50);
   }
+
+  if (Math.abs(top) === 420) {
+    top = +tableStyle.top.replace(/\D/g, "");
+
+    clearInterval(downInterval);
+
+    upInterval = setInterval(() => {
+      top -= 1;
+      table.style.top = top + "px";
+
+      if (Math.abs(top) === 390) {
+        clearInterval(upInterval);
+      }
+    }, 50);
+  }
 };
 
 button_down.onclick = function () {
@@ -28,12 +42,28 @@ button_down.onclick = function () {
 
   if (top === -120) {
     clearInterval(upInterval);
+
     downInterval = setInterval(() => {
       top += 1;
 
       table.style.top = top + "px";
 
       if (top === -60) {
+        clearInterval(downInterval);
+      }
+    }, 50);
+  }
+
+  if (Math.abs(top) === 390) {
+    top = +tableStyle.top.replace(/\D/g, "");
+
+    clearInterval(upInterval);
+
+    downInterval = setInterval(() => {
+      top += 1;
+      table.style.top = top + "px";
+
+      if (Math.abs(top) === 420) {
         clearInterval(downInterval);
       }
     }, 50);
