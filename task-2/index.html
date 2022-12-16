@@ -4,30 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="main__text">
-        <h1>Yamaguchi Voice Control</h1>
-        <p>
-          Вы можете управлять программами массажа или самим креслом с помощью
-          голосовых команд, приведённых ниже. Коснитесь кратковременно кнопки
-          голосового управления, расположенной на левом подлокотнике,
-          для запуска сеанса голосового управления. Произнесите одну
-          из доступных команд. Если произнесённая команда распознана,
-          вы услышите ответ и кресло приступит к выполнению запроса.
+        <h1 class="title">Yamaguchi Voice Control</h1>
+        <div class="container">
+          <p class="text">
+            Вы можете управлять программами массажа или самим креслом с помощью
+            голосовых команд, приведённых ниже. Коснитесь кратковременно кнопки
+            голосового управления, расположенной на левом подлокотнике,
+            для запуска сеанса голосового управления. Произнесите одну
+            из доступных команд. Если произнесённая команда распознана,
+            вы услышите ответ и кресло приступит к выполнению запроса.
+          </p>
+          <p class="subtitle">СКАЖИ:</p>
+        </div>
+        <p class="subtitle">
+          <span>«</span>ОКЕЙ<span>,</span> ЯМАГУЧИ<span>»</span>
         </p>
-        <p>СКАЖИ:</p>
-        <p>«ОКЕЙ, ЯМАГУЧИ»</p>
       </div>
-      <div class="main__yama">
-        <img src="imgs/yama.png" alt="" />
-        <img src="imgs/circle.png" alt="" />
-      </div>
-      <div class="main__chat">
-        <img src="imgs/chat.png" alt="" />
-      </div>
+
+      <img class="img yama" src="imgs/yama.png" alt="" />
+      <img class="img circle" src="imgs/circle.png" alt="" />
+
+      <img class="img chat" src="imgs/chat.png" alt="" />
     </main>
   </body>
 </html>

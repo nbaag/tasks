@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../imgs/background.png);
+}
+
+main {
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+.container {
+  max-width: 586px;
+  margin-left: 100px;
+}
+
+.title {
+  margin-top: 72px;
+  margin-left: 100px;
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 56px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 170%;
+  margin-bottom: 50px;
+}
+.subtitle:first-of-type {
+  font-weight: 900;
+  font-size: 61px;
+  margin-left: 159px;
+  margin-top: 17px;
+}
+
+span {
+  font-weight: 400;
+}
+.container .subtitle {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.yama {
+  left: 750px;
+}
+
+.circle {
+  top: 800px;
+  left: 870px;
+}
+
+.chat {
+  top: 50px;
+  left: 1130px;
+}
