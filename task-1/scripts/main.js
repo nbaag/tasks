@@ -9,10 +9,12 @@ let downInterval;
 button_up.onclick = function () {
   let top = -tableStyle.top.replace(/\D/g, "");
 
+  //desktop
   if (top === -60) {
     clearInterval(downInterval);
     upInterval = setInterval(() => {
       top -= 1;
+
       table.style.top = top + "px";
 
       if (top === -120) {
@@ -21,6 +23,7 @@ button_up.onclick = function () {
     }, 50);
   }
 
+  //mobile
   if (Math.abs(top) === 420) {
     top = +tableStyle.top.replace(/\D/g, "");
 
@@ -28,6 +31,7 @@ button_up.onclick = function () {
 
     upInterval = setInterval(() => {
       top -= 1;
+
       table.style.top = top + "px";
 
       if (Math.abs(top) === 390) {
@@ -40,6 +44,7 @@ button_up.onclick = function () {
 button_down.onclick = function () {
   let top = -tableStyle.top.replace(/\D/g, "");
 
+  //desktop
   if (top === -120) {
     clearInterval(upInterval);
 
@@ -54,6 +59,7 @@ button_down.onclick = function () {
     }, 50);
   }
 
+  //mobile
   if (Math.abs(top) === 390) {
     top = +tableStyle.top.replace(/\D/g, "");
 
@@ -61,6 +67,7 @@ button_down.onclick = function () {
 
     downInterval = setInterval(() => {
       top += 1;
+
       table.style.top = top + "px";
 
       if (Math.abs(top) === 420) {
