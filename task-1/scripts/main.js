@@ -12,7 +12,7 @@ button_up.onclick = function () {
   let top = -tableStyle.top.replace(/\D/g, "");
 
   //desktop
-  if (window.screen.width > 420) {
+  if (window.screen.width > 420 && top === -60) {
     clearInterval(downInterval);
 
     upInterval = setInterval(() => {
@@ -20,14 +20,13 @@ button_up.onclick = function () {
       table.style.top = top + "px";
 
       if (top <= -120) {
-        table.style.top = -120 + "px";
         clearInterval(upInterval);
       }
     }, 50);
   }
 
   //mobile
-  if (window.screen.width <= 420) {
+  if (window.screen.width <= 420 && top === -420) {
     top = +tableStyle.top.replace(/\D/g, "");
 
     clearInterval(downInterval);
@@ -36,8 +35,7 @@ button_up.onclick = function () {
       top -= 1;
       table.style.top = top + "px";
 
-      if (top <= 390) {
-        table.style.top = 390 + "px";
+      if (top === 390) {
         clearInterval(upInterval);
       }
     }, 50);
@@ -48,7 +46,7 @@ button_down.onclick = function () {
   let top = -tableStyle.top.replace(/\D/g, "");
 
   //desktop
-  if (window.screen.width > 420) {
+  if (window.screen.width > 420 && top === -120) {
     clearInterval(upInterval);
 
     downInterval = setInterval(() => {
@@ -56,14 +54,13 @@ button_down.onclick = function () {
       table.style.top = top + "px";
 
       if (top >= -60) {
-        table.style.top = -60 + "px";
         clearInterval(downInterval);
       }
     }, 50);
   }
 
   //mobile
-  if (window.screen.width <= 420) {
+  if (window.screen.width <= 420 && top === -390) {
     top = +tableStyle.top.replace(/\D/g, "");
 
     clearInterval(upInterval);
@@ -72,8 +69,7 @@ button_down.onclick = function () {
       top += 1;
       table.style.top = top + "px";
 
-      if (top >= 420) {
-        table.style.top = 420 + "px";
+      if (top === 420) {
         clearInterval(downInterval);
       }
     }, 50);
