@@ -59,9 +59,10 @@ span {
   position: absolute;
   width: 600px;
   height: 100px;
-  top: 700px;
+  top: 750px;
   left: 750px;
   overflow: hidden;
+  z-index: 9999;
 }
 .yama {
   position: relative;
@@ -106,13 +107,17 @@ span {
     margin-bottom: 1150px;
   }
 
-  .yama {
-    width: 330px;
+  .box {
+    top: 1100px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    top: 830px;
-    z-index: 999;
+    z-index: 9999;
+  }
+
+  .yama {
+    left: 135px;
+    width: 330px;
   }
 
   .circle {
