@@ -78,7 +78,7 @@ span {
   /* transform-origin: center center;
   transform: scale(0.4);
   transition: transform 1000ms; */
-  animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   width: 300px;
   left: 816px;
 }
@@ -91,7 +91,7 @@ span {
   0% {
     transform: scale(0.3);
   }
-  90% {
+  80% {
     transform: scale(1);
   }
   100% {
