@@ -55,9 +55,16 @@ span {
   top: 0;
   left: 0;
 }
-
-.yama {
+.box {
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  top: 700px;
   left: 750px;
+  overflow: hidden;
+}
+.yama {
+  position: relative;
 }
 
 .circle {
