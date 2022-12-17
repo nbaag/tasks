@@ -58,8 +58,8 @@ span {
 .box {
   position: absolute;
   width: 600px;
-  height: 100px;
-  top: 750px;
+  height: 50px;
+  top: 780px;
   left: 750px;
   overflow: hidden;
   z-index: 9999;
@@ -68,9 +68,35 @@ span {
   position: relative;
 }
 
+.circleBox {
+  position: absolute;
+  top: 790px;
+}
+
 .circle {
-  top: 800px;
-  left: 870px;
+  position: relative;
+  /* transform-origin: center center;
+  transform: scale(0.4);
+  transition: transform 1000ms; */
+  animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  width: 300px;
+  left: 816px;
+}
+
+.circle {
+  transform: scale(1);
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.3);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 
 .chat {
@@ -108,7 +134,7 @@ span {
   }
 
   .box {
-    top: 1100px;
+    top: 1125px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
@@ -120,11 +146,17 @@ span {
     width: 330px;
   }
 
-  .circle {
-    top: 1120px;
+  .circleBox {
+    top: 330px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .circle {
+    top: 790px;
+    left: -165px;
+    width: 330px;
   }
 
   .chat {

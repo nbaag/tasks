@@ -1,6 +1,7 @@
 const yama = document.getElementById("box");
 const yamaStyle = getComputedStyle(yama);
 const circle = document.getElementById("circle");
+const circleStyle = getComputedStyle(circle);
 
 let yamaTop = +yamaStyle.top.replace(/\D/g, "");
 let yamaHeight = +yamaStyle.height.replace(/\D/g, "");
@@ -46,7 +47,7 @@ floatingYama = () => {
   if (window.screen.width > 420) {
     styleFloat(-2, 15);
   } else if (window.screen.width <= 420) {
-    styleFloat(790, 800);
+    styleFloat(785, 800);
   }
 };
 
