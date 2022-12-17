@@ -36,7 +36,8 @@ button_up.onclick = function () {
       top -= 1;
       table.style.top = top + "px";
 
-      if (top === 390) {
+      if (top <= 390) {
+        table.style.top = 390 + "px";
         clearInterval(upInterval);
       }
     }, 50);
@@ -71,7 +72,8 @@ button_down.onclick = function () {
       top += 1;
       table.style.top = top + "px";
 
-      if (top === 420) {
+      if (top >= 420) {
+        table.style.top = 420 + "px";
         clearInterval(downInterval);
       }
     }, 50);
